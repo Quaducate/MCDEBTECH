@@ -12,7 +12,6 @@
 <meta name="keywords" content="">
 <meta name="description" content="">
 <meta name="author" content="">
-<!-- <script src=""></script> -->
 <!-- site icons -->
 <link rel="icon" href="images/fevicon/fevicon.png" type="image/gif" />
 <!-- bootstrap css -->
@@ -52,7 +51,7 @@
               <ul class="list-inline">
                 <li> <span class="topbar-label"><i class="fa  fa-home"></i></span> <span class="topbar-hightlight">Address:</span> </li>
                 <li> <span class="topbar-label"><i class="fa  fa-motto"></i></span> <span class="topbar-hightlight"><strong>Motto:</strong> Unique Technology solution in your handsname</span> </li>
-                <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:deborah.mcneil@mcdebtech.org">deborah.mcneil@mcdebtech.org</a></span> </li>
+                <li> <span class="topbar-label"><i class="fa fa-envelope-o"></i></span> <span class="topbar-hightlight"><a href="mailto:info@McDebtech.org">deborah.mcneil@mcdebtech.org</a></span> </li>
               </ul>
             </div>
           </div>
@@ -195,16 +194,19 @@
                   <div class="row">
                     
                     <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                      <input class="name" id="name" placeholder="Your Name" name="name" type="text">
+                      <input class="field_custom" placeholder="Email Address" name="name" ntype="email">
                     </div>
-                   <div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                      <textarea class="message" id="message" name="message" placeholder="Messager"></textarea>
+                    <div class="field col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <input class="field_custom" placeholder="Name" name="na" type="text">
                     </div>
-                    <div class="center"><button class="btn main_bt"  type="submit">Send Message</button></div>
+                    <div class="field col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                      <textarea class="field_custom" placeholder="Messages"></textarea>
+                    </div>
+                    <div class="center"><button class="btn main_bt" type="submit">SUBMIT NOW</button></div>
                   </div>
                   </fieldset>
                 </form>
-
+               
               </div>
             </div>
           </div>
@@ -393,7 +395,6 @@ Discover the reliable and innovative technology solutions suited for your busine
     </div>
   </div>
 </footer>
-
 <!-- end footer -->
 <!-- js section -->
 <script src="js/jquery.min.js"></script>
@@ -526,32 +527,4 @@ Discover the reliable and innovative technology solutions suited for your busine
         });
     </script>
 </body>
- <!-- <script src="https://smtpjs.com/v3/smtp.js"></script>
-<script type="text/javascript">
-  var btn = document.getElementById('btn');
-  btn.addEventListener('click', function(e){
-      e.preventDefault()
-      //Function Send Email
-                        from_name = document.getElementById('name').value;
-                        // email = document.getElementById('email').value;
-                        to_name = document.getElementById('email').value;
-                        // subject = document.getElementById('subject').value;
-                        message = document.getElementById('message').value;
-                        // var body = 'name: ' + name +'<br/> email: ' + email +'<br/> subject' + subject +'<br/> message' + message;
-                       
-
-                        Email.send({
-                                      Host : "smtp.gmail.com",
-                                      Username : "deborah.mcneil@mcdebtech.org",
-                                      Password : "password",
-                                      To : 'deborah.mcneil@mcdebtech.org',
-                                      From : email,
-                                      Subject : subject,
-                                      Body : body
-                                  }).then(
-                                    message => alert(message)
-                                  );
-
-  })
-</script> -->
 </html>
